@@ -72,7 +72,7 @@ def arithmetic_arranger(problems, t=False):
         row3 = "    " + str("-"*lengths[i]).rjust(lengths[i])
         row3_list += row3
     
-    return(row1_list + '\n' + row2_list + '\n' + row3_list)
+    arranged_problems = (row1_list + '\n' + row2_list + '\n' + row3_list)
 
 
   lengths2 = list()
@@ -109,4 +109,6 @@ def arithmetic_arranger(problems, t=False):
         row3_list += row3
         row4 = "    " + result_list[i].rjust(lengths[i])
         row4_list += row4
-    return(row1_list + '\n' + row2_list + '\n' + row3_list + '\n' + row4_list)
+    arranged_problems = (row1_list + '\n' + row2_list + '\n' + row3_list + '\n' + row4_list)
+  
+  return arranged_problems
